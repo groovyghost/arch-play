@@ -1,0 +1,14 @@
+---
+- hosts: all
+
+  pre_tasks:
+    - name: Update packages
+      become: true
+      pacman:
+        update_cache: yes
+        upgrade: yes
+      when: ansible_os_family == 'Archlinux'
+
+  tasks:
+    - import_tasks: tasks/packages.yml
+      tags: ['packages']

@@ -1,0 +1,14 @@
+---
+- name: Install packages
+  become: true
+  pacman:
+    name:
+      - rsync
+    state: present
+- name: Upgrade the system using yay, only act on AUR packages.
+  kewlfft.aur.aur:
+    name:
+      - anydesk-bin
+      - pfetch
+    use: yay
+    aur_only: yes
