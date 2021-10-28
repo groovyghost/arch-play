@@ -5,6 +5,7 @@
     name:
       - rsync
     state: present
+
 - name: Upgrade the system using yay, only act on AUR packages.
   kewlfft.aur.aur:
     name:
