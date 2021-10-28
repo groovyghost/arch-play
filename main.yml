@@ -12,3 +12,15 @@
   tasks:
     - import_tasks: tasks/packages.yml
       tags: ['packages']
+
+    - import_tasks: tasks/keybinds.yml
+      tags: ['keybinds']
+
+    - import_tasks: tasks/misc.yml
+      tags: ['misc']
+
+    - import_tasks: tasks/shell.yml
+      tags: ['shell']
+
+    - import_tasks: tasks/terminal.yml
+      tags: ['terminal']
