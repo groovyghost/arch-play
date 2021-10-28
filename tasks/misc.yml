@@ -1,0 +1,25 @@
+---
+- name: Arrangement of buttons on the titlebar
+  dconf:
+    key: "/org/gnome/desktop/wm/preferences/button-layout"
+    value: "'close:appmenu'"
+
+- name: Resize with the right button
+  dconf:
+    key: "/org/gnome/desktop/wm/preferences/resize-with-right-button"
+    value: "false"
+
+- name: Enable mouse clicks with touchpad
+  dconf:
+    key: "org/gnome/desktop/peripherals/touchpad/tap-to-click"
+    value: "true"
+
+- name: Whether two-finger scrolling is enabled
+  dconf:
+    key: "org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled"
+    value: "true"
+
+- name: Remember NumLock state
+  dconf:
+    key: "org/gnome/desktop/peripherals/keyboard/numlock-state"
+    value: "true"

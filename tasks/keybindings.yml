@@ -1,70 +1,175 @@
 ---
-- name: Custom Shortcut
+- name: Close window
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/close"
     value: "['<Super>q']"
      
-- name: Custom Shortcut
+- name: Maximize window
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/maximize"
     value: "['<Super>slash']"
       
-- name: Custom Shortcut
+- name: Move window to workspace 1
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-1"
     value: "['<Shift><Super>exclam']"
       
-- name: Custom Shortcut
+- name: Move window to workspace 2
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-2"
     value: "['<Shift><Super>at']"
       
-- name: Custom Shortcut
+- name: Move window to workspace 3
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-3"
     value: "['<Shift><Super>numbersign']"
       
-- name: Custom Shortcut
+- name: Move window to workspace 4
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-4"
     value: "['<Shift><Super>dollar']"
      
-- name: Custom Shortcut
+- name: Hide all normal windows
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/show-desktop"
     value: "['<Primary><Shift>Escape']"
       
-- name: Custom Shortcut
-  dconf:
-    key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
-    value: "['<Shift><Super>Tab']"
-      
-- name: Custom Shortcut
+- name: Switch applications
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-applications"
     value: "['<Super>Tab']"
       
-- name: Custom Shortcut
+- name: Switch to workspace 1
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-1"
     value: "['<Super>1']"
       
-- name: Custom Shortcut
+- name: Switch to workspace 2
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-2"
     value: "['<Super>2']"
      
-- name: Custom Shortcut
+- name: Switch to workspace 3
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-3"
     value: "['<Super>3']"
       
-- name: Custom Shortcut
+- name: Switch to workspace 4
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-4"
     value: "['<Super>4']"
       
-- name: Custom Shortcut
+- name: Restore window
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/unmaximize"
     value: "['<Super>Menu']"
+
+- name: View split on left
+  dconf:
+    key: "/org/gnome/mutter/keybindings/toggle-tiled-left"
+    value: "['<Super>comma']"
+
+- name: View split on right
+  dconf:
+    key: "/org/gnome/mutter/keybindings/toggle-tiled-right"
+    value: "['<Super>period']"
+    
+- name: Disable Cycle-group
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/cycle-group"
+    value: "['']"
+
+- name: Disable Cycle-group-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/cycle-group-backward"
+    value: "['']"
+    
+- name: Disable Cycle-panels
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/cycle-panels"
+    value: "['']"
+    
+- name: Disable cycle-panels-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/cycle-panels-backward"
+    value: "['']"
+    
+- name: Disable cycle-windows
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/cycle-windows"
+    value: "['']"
+    
+- name: Disable cycle-windows-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/cycle-windows-backward"
+    value: "['']"
+ 
+- name: Disable move-to-workspace-last
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-last"
+    value: "['']"
+    
+- name: Disable move-to-workspace-left
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-left"
+    value: "['']"
+    
+- name: Disable move-to-workspace-right
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-right"
+    value: "['']"
+        
+- name: Disable switch-group
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-group"
+    value: "['']"
+        
+- name: Disable switch-group-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-group-backward"
+    value: "['']"
+        
+- name: Disable switch-input-source
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-input-source"
+    value: "['']"
+        
+- name: Disable switch-input-source-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-input-source-backward"
+    value: "['']"
+        
+- name: Disable switch-panels
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-panels"
+    value: "['']"
+        
+- name: Disable switch-panels-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-panels-backward"
+    value: "['']"
+
+- name: Disable switch-to-workspace-last
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-last"
+    value: "['']"
+
+- name: Disable switch-to-workspace-left
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-left"
+    value: "['']"
+
+- name: Disable switch-to-workspace-right
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-right"
+    value: "['']"
+
+- name: Disable switch-windows
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-windows"
+    value: "['']"
+
+- name: Disable switch-windows-backward
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
+    value: "['']"
