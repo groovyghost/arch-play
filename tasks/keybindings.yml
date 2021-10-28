@@ -1,0 +1,70 @@
+---
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/close"
+    value: "['<Super>q']"
+     
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/maximize"
+    value: "['<Super>slash']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-1"
+    value: "['<Shift><Super>exclam']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-2"
+    value: "['<Shift><Super>at']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-3"
+    value: "['<Shift><Super>numbersign']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-4"
+    value: "['<Shift><Super>dollar']"
+     
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/show-desktop"
+    value: "['<Primary><Shift>Escape']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
+    value: "['<Shift><Super>Tab']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-applications"
+    value: "['<Super>Tab']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-1"
+    value: "['<Super>1']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-2"
+    value: "['<Super>2']"
+     
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-3"
+    value: "['<Super>3']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-4"
+    value: "['<Super>4']"
+      
+- name: Custom Shortcut
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/unmaximize"
+    value: "['<Super>Menu']"
