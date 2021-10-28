@@ -1,0 +1,6 @@
+---
+- name: Setting theme for tilix
+  get_url:
+    url: "https://raw.githubusercontent.com/arcticicestudio/nord-tilix/develop/src/json/nord.json"
+    dest: /tmp/
+
