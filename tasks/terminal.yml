@@ -2,7 +2,7 @@
 - name: Setting theme for tilix
   get_url:
     url: "https://raw.githubusercontent.com/arcticicestudio/nord-tilix/develop/src/json/nord.json"
-    dest: /tmp/
+    dest: /usr/share/tilix/schemes
 
 - name: TILIX - Option - Tabs on top
   dconf:
@@ -25,7 +25,7 @@
 - name: TILIX - Option - No toolbars
   dconf:
     key: "/com/gexperts/Tilix/window-style"
-    value: "'disable-csd-hide-toolbar'"
+    value: "'normal'"
     state: present 
 
 - name: TILIX - Default Profile - Find UUID
@@ -48,7 +48,7 @@
 - name: TILIX - Default Profile - Set Font
   dconf:
     key: "/com/gexperts/Tilix/profiles/{{tilix_uuid_profile.stdout}}/font"
-    value: "'Cascadia Mono 14'"
+    value: "'Fira Code weight=450 14'"
     state: present 
 
 - name: TILIX - Default Profile - Set System Font

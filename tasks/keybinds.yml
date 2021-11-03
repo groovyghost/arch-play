@@ -173,3 +173,16 @@
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
     value: "['']"
+
+- name: Tilix shortcut name
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name"
+    value: "'Terminal'"
+- name: Tilix shortcut command
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"
+    value: "'tilix'"
+- name: Tilix shortcut binding
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"
+    value: "'<Super>Return'"

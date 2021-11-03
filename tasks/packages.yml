@@ -35,7 +35,7 @@
     state: present
 
 - name: Install yay if it isn't installed already
-  aur:
+  kewlfft.aur.aur:
     name: yay
     use: makepkg
     state: present
