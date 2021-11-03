@@ -1,5 +1,6 @@
 ---
 - name: Setting theme for tilix
+  become: true
   get_url:
     url: "https://raw.githubusercontent.com/arcticicestudio/nord-tilix/develop/src/json/nord.json"
     dest: /usr/share/tilix/schemes
@@ -48,7 +49,7 @@
 - name: TILIX - Default Profile - Set Font
   dconf:
     key: "/com/gexperts/Tilix/profiles/{{tilix_uuid_profile.stdout}}/font"
-    value: "'Fira Code weight=450 14'"
+    value: "'Cascadia Code 14'"
     state: present 
 
 - name: TILIX - Default Profile - Set System Font

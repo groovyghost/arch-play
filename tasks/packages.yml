@@ -10,6 +10,7 @@
       - gnome-control-center
       - tilix
       - ttf-fira-code
+      - ttf-cascadia-code
       - tmate
       - rsync
       - neofetch
