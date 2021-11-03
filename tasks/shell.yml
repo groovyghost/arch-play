@@ -7,18 +7,18 @@
 - name: ZSH - Change user shell to zsh
   become: yes
   user:
-    name: "{{ansible_env.SUDO_USER}}"
+    name: "{{ ansible_env.USER }}"
     shell: /bin/zsh
 
 - name: set zprofile
   copy:
     src: files/.zprofile
-    dest: "{{ ansible_env.home }}"
+    dest: "{{ ansible_env.HOME }}"
 
 - name: Set xinitrc
   copy:
     src: files/.xinitrc
-    dest: "{{ ansible_env.home }}"
+    dest: "{{ ansible_env.HOME }}"
 
 - name: Configure VIM
   copy:
