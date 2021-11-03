@@ -11,17 +11,17 @@
 
 - name: Enable mouse clicks with touchpad
   dconf:
-    key: "org/gnome/desktop/peripherals/touchpad/tap-to-click"
+    key: "/org/gnome/desktop/peripherals/touchpad/tap-to-click"
     value: "true"
 
 - name: Whether two-finger scrolling is enabled
   dconf:
-    key: "org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled"
+    key: "/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled"
     value: "true"
 
 - name: Remember NumLock state
   dconf:
-    key: "org/gnome/desktop/peripherals/keyboard/numlock-state"
+    key: "/org/gnome/desktop/peripherals/keyboard/numlock-state"
     value: "true"
 
 - name: Copy wallpapers
