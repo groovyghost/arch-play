@@ -34,6 +34,12 @@
       - zsh
     state: present
 
+- name: Install yay if it isn't installed already
+  aur:
+    name: yay
+    use: makepkg
+    state: present
+
 - name: Upgrade the system using yay, only act on AUR packages.
   kewlfft.aur.aur:
     name:
