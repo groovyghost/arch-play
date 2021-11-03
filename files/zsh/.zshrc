@@ -8,8 +8,8 @@ export TERMINAL='tilix'
 export BROWSER='brave'
 
 #ZSH Prompt (typewritten)
-fpath=($fpath "$HOME/.config/zsh/.zfunctions")
-autoload -U promptinit; promptinit
+fpath+=$HOME/.config/zsh/typewritten
+autoload -Uz promptinit; promptinit
 prompt typewritten
 
 #Alias
