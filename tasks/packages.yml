@@ -5,6 +5,33 @@
     name:
       - xorg-server
       - xorg-xinit
+      - gnome-shell
+      - gnome-tweaks
+      - gnome-control-center
+      - tilix
+      - ttf-fira-code
+      - tmate
+      - rsync
+      - neofetch
+      - jq
+      - cpio
+      - mpv
+      - pulseaudio-alsa
+      - pulsemixer
+      - pamixer
+      - python-psutil
+      - noto-fonts-emoji
+      - youtube-dl
+      - fzf
+      - xclip
+      - maim
+      - zip
+      - unzip
+      - picom
+      - zathura
+      - zathura-pdf-mupdf
+      - ffmpeg
+      - zsh
     state: present
 
 - name: Upgrade the system using yay, only act on AUR packages.
@@ -12,5 +39,11 @@
     name:
       - anydesk-bin
       - pfetch
+      - brave
+      - lowdown
+      - dropbox-cli
+      - devour
+      - anydesk-bin
+      - barrier
     use: yay
     aur_only: yes
