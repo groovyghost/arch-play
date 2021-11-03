@@ -23,3 +23,8 @@
   dconf:
     key: "org/gnome/desktop/peripherals/keyboard/numlock-state"
     value: "true"
+
+- name: Copy wallpapers
+  copy:
+    src: files/wallpapers/
+    dest: "{{ ansible_env.HOME }}/.local/share/backgrounds/"
