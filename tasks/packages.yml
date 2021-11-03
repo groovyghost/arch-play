@@ -3,7 +3,8 @@
   become: true
   pacman:
     name:
-      - rsync
+      - xorg-server
+      - xorg-xinit
     state: present
 
 - name: Upgrade the system using yay, only act on AUR packages.

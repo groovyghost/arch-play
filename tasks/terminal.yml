@@ -1,0 +1,58 @@
+---
+- name: Setting theme for tilix
+  get_url:
+    url: "https://raw.githubusercontent.com/arcticicestudio/nord-tilix/develop/src/json/nord.json"
+    dest: /tmp/
+
+- name: TILIX - Option - Tabs on top
+  dconf:
+    key: "/com/gexperts/Tilix/tab-position"
+    value: "'top'"
+    state: present
+
+- name: TILIX - Option - Title Style
+  dconf:
+    key: "/com/gexperts/Tilix/terminal-title-style"
+    value: "'none'"
+    state: present
+
+- name: TILIX - Option - Dark Theme
+  dconf:
+    key: "/com/gexperts/Tilix/theme-variant"
+    value: "'dark'"
+    state: present
+
+- name: TILIX - Option - No toolbars
+  dconf:
+    key: "/com/gexperts/Tilix/window-style"
+    value: "'disable-csd-hide-toolbar'"
+    state: present 
+
+- name: TILIX - Default Profile - Find UUID
+  shell: gsettings get com.gexperts.Tilix.ProfilesList default | awk '{ print substr( $0, 2, length($0)-2 ) }'
+  register: tilix_uuid_profile
+  changed_when: false
+
+- name: TILIX - Default Profile - Set Transparency
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/{{tilix_uuid_profile.stdout}}/background-transparency-percent"
+    value: "5"
+    state: present 
+
+- name: TILIX - Default Profile - Dim Transparency
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/{{tilix_uuid_profile.stdout}}/dim-transparency-percent"
+    value: "10"
+    state: present 
+
+- name: TILIX - Default Profile - Set Font
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/{{tilix_uuid_profile.stdout}}/font"
+    value: "'Cascadia Mono 14'"
+    state: present 
+
+- name: TILIX - Default Profile - Set System Font
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/{{tilix_uuid_profile.stdout}}/use-system-font"
+    value: "false"
+    state: present 
